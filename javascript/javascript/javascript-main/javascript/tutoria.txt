@@ -1,0 +1,304 @@
+Aula 1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Na linguagem JS o ; (ponto e vírgula) é opcional.
+Pode-se utilizar "" ou '' só não pode combiná-los.
+Dica: "" para textos e '' para importações.
+Nas estruturas de controle condicional e nos laços de repetições pode-se omitir as chaves, porém só uma linha de código será vinculada.
+Variáveis na linguagem JS são dinamicamente tipadas e somente 3 tipos: (string, number e boolean) 
+Para declarar uma constante ou variável podemos usar: const, var, let
+var É OBSOLETO (!NÃO UTILIZAR!)
+Sintaxe JS:
+    console.log // printar no terminal
+    console.clear() // limpar o terminal
+Strings:
+    .replace (",",".") // substitui um caractere por outro
+Concatenação // unir texto com conteúdo de variáveis:
+    + // Evitar o uso devido a tipagem dinâmica
+    `${}` // Mais usado na linguagem JS
+Numbers:
+Number // converte para o tipo numérico
+Number.isInteger // Verifica se o número é inteiro
+.toFixed(x) // Formatar número de acordo com a quantidade de casas decimais
+Booleans:
+Aula 2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Operadores aritméticos
+ATENÇÃO A REGRA DE PRECEDÊNCIA
+1º) parênteses
+
+2º) multiplicação
+
+3º) divisão
+
+4º) soma
+
+5º) subtração
+ 
+Comparadores:
+Observação importante:
+não usar os comparadores == != (riscos devido a tipagem dinâmica)
+------------------------------------
+NPM (node package manager)
+gerenciador de pacotes node (pacotes com funcionalidades que podem ser adicionadas ao node)
+para gerenciar(versão, atualizações etc.) os pacotes node, é necessário configurar o package.json
+json(JavaScript object notation)
+npm -version
+npm ls (listar pacotes instalado)
+npm i (instalar um pacote)
+npm r (remover um pacote)
+Observação: os pacotes são instalados no projeto(raiz)
+passo 1 - criar o arquivo package.json
+npm init
+repositório de pacotes
+https://www.npmjs.com/
+ 
+Exercício:
+
+Criar no console JS um app para calcular a porcentagem,
+
+usando regra de 3, conforme modelo:
+ 
+10% de 200 = 20
+
+X       Y    valor
+ 
+200 --------------------- 100%
+
+            \   /
+
+              X
+
+            /   \
+
+valor ------------------- 10%
+ 
+valor x 100 = 200 x 10
+
+valor x 100 = 2000
+ 
+            2000
+
+valor = ------------
+
+            100
+ 
+        20
+
+valor = --
+
+         1
+ 
+valor = 20
+ 
+Variáveis;
+
+3 Variáveis: x y valor
+ 
+Entrada: 
+
+x , Y
+ 
+processamento:
+
+valor = (x * y) / 100
+ 
+Saída:
+
+valor
+ 
+----------------------------------------------
+
+Funções:
+
+Função é um bloco de código reutilizável
+
+Função Simples:
+ 
+function nome() {   
+
+    return
+
+}
+ 
+Funções anônimas
+
+const nome = function () {
+ 
+}
+ 
+let nome = function () {
+
+}
+ 
+Funções em JavaScript moderno pode ser simplificadas
+ 
+_______________________________________________________
+
+obs:
+
+typeof //verifica a tipagem dinâmica
+
+primitivos (string, number e boolean)
+
+function
+
+object
+ 
+_______________________________________________________
+
+POO -  Programação Orientada a Objetos
+
+Pilares: 
+
+- Abstração
+
+- Herança
+
+- Polimorfiamo
+
+- Encapsulamento (Segurança)
+ 
+Toda Classe modelo inicia com a letra maiúscula
+ 
+new(IMPORTANTE!) indica a criação de um Objetos
+
+this(IMPORTANTE) quando se refere a ele mesmo
+
+super -> indica o uso de atributos da classe pai
+
+polimorfismo é a mudança do compotamento de um método mais existente. 
+
+*** Atenção O pormorfismo não cria o método, ele apenas modifica o comportamento de um método existente. Obrigatório usar o mesmo nome do método da classe pai.
+ 
+DICA:
+
+class Classe {} //cria uma classe modelo
+
+- o nome da classe sempre deve começar com uma letra maiúscula
+
+- Classe(biologia)
+
+- objeto (new) (Substantivo)
+
+- atributos (variáveis) (adjetivos)
+
+- ações(metodos/funções) (verbos)
+ 
+Encapsulamento
+
+1) proteger a variável criando um modificador privado (acesso exclusivo da calsse ao qual pertence)
+
+2) Criar uma função para obter o conteúdo da variável (get)
+
+3) Criar uma função para gravar um dado na variável (set)
+ 
+no JavaScript usamos _ antes da variável para encapsular
+ 
+----------------------------------------------------------------------
+
+no JavaScript objetos podem ser criados sem uma classe de modelo
+
+estruturas de dados usando objetos
+
+Exemplos:
+
+- package.json
+
+- coleção do banco de dados (MongoDB)
+ 
+ATENÇÃO !!
+
+tipos no JavaScript
+
+- string
+
+- number
+
+- boolean
+
+- function
+
+- object
+ 
+aula 6 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Array (vetor)
+
+Array multidimensional (matriz)
+
+-É uma forma especial de trabalhar com variáveis
+
+- Índice [0] [1]
+
+- na linguagem JS array é um objeto
+ 
+ATENÇÃO!!!
+
+cuidado ao manipular os dados e alterar o índice do array
+
+Mais Seguro:
+
+Push() - Método usado para adicionar ao final do Array
+
+pop() - excluir o último registro de Array
+
+delete -  excluir um dado sem alterar o índice
+ 
+Percorrendo um array
+
+1) for forEach
+
+2) map() //  percorre o array, faz algo e gera outro array com o resultado
+ 
+Um array também pode ser criado como um objeto
+
+let nome = []
+
+let nome = new Array()
+ 
+Um array pode ser criado com um estrutura de dados, junto com
+
+objetos e podem ser usados filtros para a manipulação de dados.
+ 
+Atenção
+
+Sempre criar uma cópia do array(para exibição).
+
+_______________________________________________________
+
+DOM - document object modelo
+
+É uma técnica para ientificar elementos HTML (tags) que 
+
+serão manipulados pelo css ou js 
+
+é uma forma de trabalhar objetos com HTML
+
+a técnica consiste em atribuir um id de elemento
+ 
+setTimeout(()=>{},1000) Usado para executar uma funçaõ a infinitamente a cada 
+
+determinado tempo (milisegundos)
+ 
+O JavaScript é capaz  de adicionar ou remover uma classe css ao documento HTML usando o id do elemento
+ 
+_______________________________________________________
+ 
+plataforma node
+
+Observação: Ao clonar um repositório ou trabalhar em um outro PC, é necessario reinstalar as bibliotecas presentes nas depedencas do paskage.json
+
+npm install(digitar a raiz do projeto)
+ 
+----------------------------------------------------------------------------------------
+
+Assincronismo:
+
+Métodos e funções que permitem ao JS trabalhar multitarefas
+ 
+- Banco de dados 
+
+- acesso a URLs (serviços de nuvem, web services, apis, etc)
+
+- acessoao disco(HD, SSD etc) do equipamento
+
+npm | Home
+===================================================================

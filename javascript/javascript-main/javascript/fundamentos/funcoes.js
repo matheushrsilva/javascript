@@ -1,7 +1,7 @@
 
 /**
  * Estudo dass funções usando a sintaxe moderna da linguagem
- * @author THIAGO PORFIRIO MALAGIOLIN
+ * @author matheus henrique
  */
  
 console.clear()
